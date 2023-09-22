@@ -1,20 +1,48 @@
-.container {
-    width: 1000px;
+:root {
+    --header-size: 10vh;
+}
+header {
+    width: 100%;
+    height: var(--header-size);
     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 1px solid gray;
+    align-items: center;
+    padding: 0 1em;
+    box-sizing: border-box;
+}
+.nav-list {
+    display: flex;
+}
+.nav-items {
+    font-size: 1.5em;
+    list-style-type: none;
+    padding: 1.2em;
+}
+.logo {
+    align-self: stretch;
+}
+.banner {
+    width: 100%;
+    height: calc(100vh - var(--header-size));
+    background-image: url('./assets/gor.jpg');
+    background-size: cover;
+
+}
+.news {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 5vh 10vw;
+    justify-content: space-between;
+      
+
+}
+.news-card {
+    width: 30%;
     border: 1px solid black;
-}
-.box {
-    background-color: rgb(53, 145, 114);
-    color: beige;
-    flex-basis: 100px;
-    border: 1px solid black;
-}
-.one, .four {
-    flex-grow: 1;
-}
-.two {
-    flex-grow: 3;
-}
-.three, .five {
-    flex-grow: 2;
+    padding: 2em;
+    box-sizing: border-box;
+    margin: 2vh 1vw;
+
 }

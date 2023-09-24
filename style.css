@@ -21,7 +21,6 @@ header {
     list-style-type: none;
     padding: 1.2em;
     color: var(--main-color);
-    
 }
 .nav-items:hover {
     /* background-color: var(--main-color);
@@ -41,8 +40,6 @@ header {
 }
 .nav-items:hover::after {
     width: 0;
-    
-
 }
 .logo {
     align-self: stretch;
@@ -52,15 +49,12 @@ header {
     height: calc(100vh - var(--header-size));
     background-image: url('./assets/gor.jpg');
     background-size: cover;
-
 }
 .news {
     display: flex;
     flex-flow: row wrap;
     padding: 5vh 10vw;
     justify-content: space-between;
-      
-
 }
 .news-card {
     width: 30%;
@@ -68,5 +62,35 @@ header {
     padding: 2em;
     box-sizing: border-box;
     margin: 2vh 1vw;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.news-card-title {
+    position: absolute;
+    transition: all 0.5s ease; 
+}
 
+.news-card-text {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: 0;
+    z-index: 2;
+    background-color: var(--main-color);
+    color: white;
+    transition: all 0.6s ease-in;
+    border: 1px solid black;
+    padding: 2em;
+    box-sizing: border-box; 
+}
+
+.news-card:hover .news-card-text {
+    transform: scale(1.2);
+    top: -6.5em;
+} 
+.news-card:hover {
+    overflow: visible;
 }

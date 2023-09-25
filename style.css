@@ -58,39 +58,105 @@ header {
 }
 .news-card {
     width: 30%;
+    height: 20vh; 
     border: 1px solid black;
     padding: 2em;
     box-sizing: border-box;
+    font-size: 1em;
+    line-height: 1.2em;
     margin: 2vh 1vw;
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: hidden;
+    overflow-y: auto;
+    transition: all 0.8s ease-in-out;
+    background-color: white;
 }
 .news-card-title {
     position: absolute;
-    transition: all 0.5s ease; 
-}
+    white-space: nowrap;
+    transition: all 0.2s ease-in-out; 
+} 
 
 .news-card-text {
     position: absolute;
-    top: 100%;
+    top: 0;
+    bottom: 0;  
     right: 0;
     left: 0;
     z-index: 2;
     background-color: var(--main-color);
     color: white;
-    transition: all 0.6s ease-in;
-    border: 1px solid black;
     padding: 2em;
     box-sizing: border-box; 
+    transform: rotateY(90deg);
+    transition: all 0.7s ease-in-out; 
 }
 
-.news-card:hover .news-card-text {
-    transform: scale(1.2);
-    top: -6.5em;
-} 
 .news-card:hover {
-    overflow: visible;
-}
+    background-color: var(--main-color); 
+} 
+.news-card:hover .news-card-title {
+    transform: rotateX(90deg);
+}  
+
+/* first child */
+.news-card:first-child:hover .news-card-text {
+    transform: rotateY(0deg);
+} 
+.news-card:first-child:hover .news-card-title {
+    transform: rotateY(90deg);
+}  
+
+/* child 2 */
+.news-card:nth-child(2) .news-card-text {
+    transform: rotateX(90deg);
+    transition: all 0.7s ease-out; 
+} 
+
+.news-card:nth-child(2):hover .news-card-text {
+    transform: rotateX(0deg);
+} 
+
+/* child 3 */
+.news-card:nth-child(3) .news-card-text {
+    transform: rotateZ(-30deg);
+    transition: all 0.8s ease-out 0.3s; 
+    z-index: -1;
+} 
+ 
+.news-card:nth-child(3):hover .news-card-text {
+    z-index: 2;
+    transform: rotateZ(0deg);
+
+} 
+
+/* child 4 */
+.news-card:nth-child(4) .news-card-text {
+    top: -20%;
+    transform: rotateY(90deg);
+    transition: all 0.7s ease-out; 
+} 
+.news-card:nth-child(4):hover .news-card-text {
+    top: 0;
+    transform: rotateY(0deg);
+}  
+/* child 5 */
+.news-card:nth-child(5) .news-card-text {
+    transform: skewX(45deg) skewY(30deg) rotateX(90deg) scale(0.5);
+    /* z-index: -1; */
+    transition: all 1s ease-out; 
+} 
+.news-card:nth-child(5):hover .news-card-text {
+    transform: skew(0deg);
+    
+}  
+/* child 6 */
+.news-card:nth-child(6) .news-card-text {
+   
+} 
+.news-card:nth-child(6):hover .news-card-text {
+  
+    
+}  

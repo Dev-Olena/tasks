@@ -1,55 +1,49 @@
-/* .form {
-    width: 300px;
-    display: flex;
-    flex-direction: column;
-    border: 1px solid black;
-    margin: 0 auto;
-    padding: 1%;
+:root {
+    --main-green: rgb(22, 201, 117);
+    --border-radius: 15px;
 }
-.form * {
-    margin: 5px 0;
+body {
+    background-color: #f6f6f6;
 }
-.flex-row {
-    display:flex;
-    flex-direction:row;
-    align-items: center;
-    justify-content: space-between;
-} */
 .form {
-    width: 250px;
+    width: 500px;
     display: flex;
     flex-direction: column;
-    border: 1px solid black;
+    border-radius: var(--border-radius);
     margin: 0 auto;
-    padding: 2%;
-    background-color: rgb(250, 250, 250);
-    border-radius: 8px;
-}   
+    padding: 5%;
+    background-color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(69, 69, 224);
+    font-size: 1.2em;
+}
 .form * {
     margin: 5px 0;
-    font-size: 14px;
-    color: rgb(43, 42, 42);
-    font-family: Arial, Helvetica, sans-serif;
 }
-.row {
-    display: flex;
-    justify-content: space-between;
+.title {
+    font-weight: 600;
+    text-align: center;
+    font-size: 2em;
+    color: black;
 }
-.link {
-    color: rgb(73, 73, 228);
-    text-decoration: none;
+.form label {
+    margin: 1em 0 0;
 }
+.form input, select {
+    border: 2px solid var(--main-green);
+    border-radius: var(--border-radius);
+    padding: 0.7em;
+    background-color: white;
+}
+
 .button {
-    background-color: green;
-    border-radius: 5px;
+    background-color: var(--main-green);
+    border-radius: var(--border-radius);
     border: none;
     color: white;
-    padding: 0.5em 0;
+    padding: 0.7em;
     margin-top: 3%;
     cursor: pointer;
-}
-input {
-    border: 1px solid rgb(211, 206, 206);
-    border-radius: 5px;
-    padding: 0.3em;
+    font-size: inherit;
+    margin-top: 2em;
 }

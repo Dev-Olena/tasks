@@ -1,30 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../reset.css">
     <link rel="stylesheet" href="./style.css">
-    
-</head>
-<body>
-    <!-- <form method="get" class="form">
-        <label>Type your name<input type="text"></label>
-        <label for="email" class="flex-row">Type your email</label><input type="email" id="email">
-        <input type="password" placeholder="Type your password">
-        <button>Click me</button>
-    </form> -->
-    <form class="form">
-        <label for="user-name">User name or email address</label>
-        <input type="text" id="user-name">
-        <div class="row">
-            <label for="password">Password</label>
-            <p><a href="#" class="link">Forgot password?</a></p>
-        </div>
-        <input type="text" id="password">
-        <button class="button">Sign in</button>
 
-    </form>
+</head>
+
+<body>
+   <form method="GET" class="form">
+    <h1 class="title">Signup form</h1>
+    <label for="user">User Id</label>
+    <input type="text" id="user" name="user-id">
+    <label for="pass">Password</label>
+    <input type="password" id="pass" name="password">
+    <label for="name">Name</label>
+    <input type="text" id="name" name="user-name">
+    <label for="country">Country</label>
+    <select id="country" name="country" required>
+        <option 
+            value="" 
+            disabled 
+            selected 
+            hidden>
+            Select An Option
+        </option>
+        <option value="Ukraine">Ukraine</option>
+        <option value="USA">USA</option>
+        <option value="Poland">Poland</option>
+    </select>
+    <label for="code">Zip Code</label>
+    <input type="text" id="code" name="Zip-Code">
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email">
+    <button class="button">Submit</button>
+   </form>
 </body>
+
 </html>

@@ -1,0 +1,26 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url(../fonts/RobotoSlab-VariableFont_wght.ttf) format("truetype");
+
+}
+main {
+    display: flex;
+    flex-direction: row;
+}
+div {
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    margin: 5px;
+}
+@media screen and (max-width: 400px) {
+    main {
+        flex-direction: column;
+        width: 80%;
+        margin: 0 auto;
+        align-items: center;
+    }
+    div {
+        background-color: blue;
+    }
+}

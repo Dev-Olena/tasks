@@ -3,24 +3,32 @@
     src: url(../fonts/RobotoSlab-VariableFont_wght.ttf) format("truetype");
 
 }
-main {
+.background {
+    width: 100vw;
+    height: 100vh;
+    background-color: bisque;
     display: flex;
-    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
-div {
-    width: 100px;
-    height: 100px;
-    background-color: green;
-    margin: 5px;
+.form {
+    width: 30vw;
+    background-color: rgb(191, 243, 226);
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
+    box-sizing: border-box;
+    font-family: 'Roboto';
 }
-@media screen and (max-width: 400px) {
-    main {
-        flex-direction: column;
-        width: 80%;
-        margin: 0 auto;
-        align-items: center;
-    }
-    div {
-        background-color: blue;
-    }
+.form-title {
+    align-self: center;
+}
+input {
+    margin-bottom: 1em;
+    padding: 0.3em;
+}
+.button {
+    margin-top: 1.5em;
+    padding: 0.3em;
+    font-size: 1.2em;
 }

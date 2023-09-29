@@ -2,8 +2,9 @@
 
 .container {
     display: grid;
-    grid-template-columns: 200px 300px 100px;
-    grid-template-rows: repeat(5, 100px);
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    margin-bottom: 10px;
 
 }
 .box {
@@ -12,3 +13,56 @@
     text-align: center;
     border: 1px solid black;
 }
+.two {
+    grid-column: 2 /4;
+}
+.three {
+    grid-column: 1 /3;
+}
+.six {
+    grid-column: 2 /4;
+}
+
+/* two */
+.two-one {
+    grid-column: 1 / 3;
+    grid-row: 1 / 3;
+
+}
+/* three */
+.container2 {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(6, 50px);
+    margin-bottom: 10px;
+}
+.three-one, .three-three {
+    grid-row: 1 / 3;
+}
+.three-one, .three-four, .three-six {
+    grid-column: 1 / 2;
+}
+.three-two, .three-seven {
+    grid-column: 2 / 3;
+}
+.three-two {
+    grid-row: 1 / 4;
+}
+.three-three, .three-five, .three-eight  {
+    grid-column: 3 / 4;
+}
+.three-four, .three-five  {
+    grid-row: 3 / 5;
+}
+ 
+.three-six, .three-eight {
+    grid-row: 5 / 7;
+}
+.three-seven {
+    grid-row: 4 / 7;
+}
+
+
+
+
+

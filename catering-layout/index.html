@@ -11,74 +11,83 @@
 
 <body>
     <header class="header">
-        <p class="header-text">Gourment au Catering</p>
+        <p class="header-text letter-space">Gourment au Catering</p>
         <nav class="header-list">
-            <li class="header-lis-item">About</li>
-            <li class="header-lis-item">Menu</li>
-            <li class="header-lis-item">Contact</li>
+            <li class="header-list-item letter-space"><a href="#about">About</a></li>
+            <li class="header-list-item letter-space"><a href="#menu">Menu</a></li>
+            <li class="header-list-item letter-space"><a href="#contact">Contact</a></li>
         </nav>
     </header>
     <main>
         <section class="banner">
-            <h1 class="banner-title">Le Catering</h1>
+            <h1 class="banner-title letter-space" id="about">Le Catering</h1>
         </section>
-        <section class="row-section">
-            <img src="../assets/pie.jpg">
-            <article>
-                <h2>About Catering</h2>
-                <p>Tradition since 1889</p>
+        <section class="row-section about-section" >
+            <img src="../assets/pie.jpg" class="img">
+            <article class="about-article row-section-article">
+                <h2 class="article-title letter-space">About Catering</h2>
+                <p class="about-article-subtitle letter-space">Tradition since 1889</p>
                 <p>The Catering was founded in blabla by Mr. Smith in lorem ipsum dolor sit amet, consectetur adipiscing
                     elit consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                     Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
                     consequat. Duis aute iruredolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                    nulla pariatur.We only use seasonal ingredients.</p>
+                    nulla pariatur.We only use <span>seasonal</span> ingredients.</p>
                 <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
                     laborum consectetur adipiscing elit, sed do eiusmod temporincididunt ut labore et dolore magna
                     aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
                     commodo consequat.</p>
             </article>
         </section>
-        <section class="row-section">
-            <article>
-                <h2>Our Menu</h2>
-                <p>Bread Basket</p>
-                <p>Assortment of fresh baked fruit breads and muffins 5.50</p>
-                <p>Honey Almond Granola with Fruits</p>
-                <p>Natural cereal of honey toasted oats, raisins, almonds and dates 7.00</p>
-                <p>Belgian Waffle</p>
-                <p>Vanilla flavored batter with malted flour 7.50</p>
-                <p>Scrambled eggs</p>
-                <p>Scrambled eggs, roasted red pepper and garlic, with green onions 7.50</p>
-                <p>Blueberry Pancakes</p>
-                <p>With syrup, butter and lots of berries 8.50</p>
+        <hr class="line" id="menu">
+        <section class="row-section menu-section">
+            <article class="menu-article row-section-article">
+                <h2 class="article-title letter-space">Our Menu</h2>
+                <p class="menu-position letter-space">Bread Basket</p>
+                <p class="menu-describe">Assortment of fresh baked fruit breads and muffins 5.50</p>
+                <p class="menu-position letter-space">Honey Almond Granola with Fruits</p>
+                <p class="menu-describe">Natural cereal of honey toasted oats, raisins, almonds and dates 7.00</p>
+                <p class="menu-position letter-space">Belgian Waffle</p>
+                <p class="menu-describe">Vanilla flavored batter with malted flour 7.50</p>
+                <p class="menu-position letter-space">Scrambled eggs</p>
+                <p class="menu-describe">Scrambled eggs, roasted red pepper and garlic, with green onions 7.50</p>
+                <p class="menu-position letter-space">Blueberry Pancakes</p>
+                <p class="menu-describe">With syrup, butter and lots of berries 8.50</p>
             </article>
-            <img src="../assets/menu.jpg">
+            <img src="../assets/menu.jpg" class="img">
         </section>
-        <section class="column-section">
-            <h2>Contact</h2>
-            <p>We offer full-service catering for any event, large or small. We understand your needs and we will cater
+        <hr class="line">
+        <section class="contact-section" id="contact">
+            <h2 class="article-title letter-space">Contact</h2>
+            <p class="contact-article-info">We offer full-service catering for any event, large or small. We understand your needs and we will cater
                 the food to satisfy the biggerst criteria of them all, both look and taste. Do not hesitate to contact
                 us.
             </p>
-            <p>Catering Service, 42nd Living St, 43043 New York, NY</p>
-            <form method="get">
-                <label for="user-name">You can also contact us by phone 00553123-2323 or email catering@catering.com, or
-                    you can send us a message here:</label>
-                <input type="text" id="user-name" placeholder="Name" name="name">
-                <select name="number">
-                    <object data="1" type="">1</object><object data="" type="">2</object><object data=""
-                        type="">3</object><object data="" type="">4</object><object data="" type="">5</object><object
-                        data="" type="">6</object><object data="" type="">7</object><object data=""
-                        type="">8</object><object data="" type="">9</object><object data="" type="">10</object>
+            <p class="address">Catering Service, 42nd Living St, 43043 New York, NY</p>
+            <p class="contact-article-info">You can also contact us by phone 00553123-2323 or email catering@catering.com, or
+                    you can send us a message here:</p>
+            <form method="get" class="form">
+                <input type="text" placeholder="Name" name="name" class="user-name">
+                <select name="number" required>
+                    <option value="" disabled selected hidden>How many people</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
                 </select>
-                <input type="datetime">
+                <input type="datetime-local" name="date" value="16/11/2020, 20:00" class="date">
                 <input type="text" placeholder="Message \ Special requirments">
-                <button>Send message</button>
+                <button class="button">Send message</button>
             </form>
         </section>
     </main>
-    <footer>
-        <p>Powered by
+    <footer class="footer">
+        <p class="footer-text">Powered by
             <a href="https://www.w3schools.com/w3css/default.asp">w3.css</a>
         </p>
     </footer>

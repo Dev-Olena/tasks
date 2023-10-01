@@ -1,0 +1,250 @@
+@font-face {
+    font-family: 'Merriweather';
+    src: url(../fonts/Merriweather-Regular.ttf) format('truetype');
+}
+
+:root {
+    font-family: 'Merriweather';
+    --grey-color: rgb(155, 155, 155);
+}
+
+main {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.letter-space {
+    letter-spacing: 0.3em;
+}
+
+/* header */
+.header {
+    width: 100%;
+    height: 6vh;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2em;
+    box-sizing: border-box;
+    font-size: 1em;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    -webkit-box-shadow: 0px 6px 7px 0px rgba(181, 181, 181, 1);
+    -moz-box-shadow: 0px 6px 7px 0px rgba(181, 181, 181, 1);
+    box-shadow: 0px 6px 7px 0px rgba(181, 181, 181, 1);
+}
+
+.header-text {
+    font-size: 0.8em;
+}
+
+
+.header-list {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.header-list-item {
+    list-style-type: none;
+}
+.header-list-item a {
+    font-size: 0.8em;
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    padding: 1em;
+    box-sizing: border-box;
+}
+.header-list-item a:hover {
+    background-color: rgba(201, 198, 198, 0.829);
+}
+
+.header-list-item:nth-child(2) {
+    margin: 0 1em;
+}
+
+/* banner-section */
+.banner {
+    width: 100%;
+    height: 85vh;
+    background-image: url('../assets/hamburger.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 8vh;
+    position: relative;
+
+}
+
+.banner-title {
+    font-size: 1.8em;
+    color: rgb(75, 73, 73);
+    position: absolute;
+    bottom: 4.5%;
+    left: 2%;
+    z-index: 1;
+}
+
+/* united sections styles */
+.row-section {
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    justify-content: space-around;
+}
+
+.img,
+.row-section-article {
+    width: 45%;
+}
+
+.img {
+    height: 100%;
+    object-fit: cover;
+}
+
+.line {
+    width: 70%;
+    border: none;
+    height: 1.5px;
+    color: rgb(238, 234, 234);
+    background-color: rgb(238, 234, 234);
+    margin: 6em 0;
+}
+
+.article-title {
+    font-size: 1.8em;
+    letter-spacing: 0.3em;
+    margin-bottom: 2em;
+}
+
+.row-section-article .article-title {
+    text-align: center;
+}
+
+/* about-section */
+.about-section {
+    height: 70vh;
+    /* margin-bottom: 10vh; */
+}
+
+.about-article {
+    padding-top: 2em;
+    box-sizing: border-box;
+    line-height: 1.7em;
+}
+
+.about-article-subtitle {
+    text-align: center;
+    letter-spacing: 0.3em;
+}
+
+.about-article p:nth-child(3) {
+    margin: 1.3em 0;
+}
+
+.about-article p:nth-child(4) {
+    color: var(--grey-color);
+}
+
+/* menu-section */
+.menu-section {
+    /* margin: 10vh;  */
+    height: 80vh;
+}
+
+.menu-article {
+    margin-top: 1.5em;
+}
+
+.menu-position {
+    letter-spacing: 0.3em;
+    font-size: 1.1em;
+}
+
+.menu-describe {
+    font-size: 0.8em;
+    margin: 1.3em 0 4em;
+    color: var(--grey-color);
+}
+
+/* contact-section */
+.contact-section {
+    height: 70vh;
+    width: 65%;
+}
+
+.contact-article-info {
+    font-size: 0.8em;
+    line-height: 1.7em;
+}
+
+.address {
+    font-size: 1.1em;
+    color: rgb(111, 111, 145);
+    font-weight: 600;
+    margin: 1.3em 0;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+input,
+select {
+    padding: 1.5em 0.7em;
+    box-sizing: border-box;
+    color: var(--grey-color);
+    font-size: 0.9em;
+    border: none;
+    border-bottom: 1px solid var(--grey-color);
+    ;
+}
+
+input {
+    margin: 1em 0;
+}
+
+.date {
+    font-size: 1em;
+}
+
+select {
+    background-color: white;
+}
+
+.button {
+    align-self: flex-start;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-family: 'Merriweather';
+    padding: 0.8em 1em;
+    border: none;
+    margin-top: 1em;
+}
+.button:hover {
+    background-color: var(--grey-color);
+}
+/* Footer */
+.footer {
+    height: 12vh;
+    background-color: rgb(228, 228, 228);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-text {
+    font-size: 0.8em;
+}
+
+.footer-text a {
+    color: black;
+}

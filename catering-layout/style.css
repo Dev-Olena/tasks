@@ -6,6 +6,7 @@
 :root {
     font-family: 'Merriweather';
     --grey-color: rgb(155, 155, 155);
+    --light-grey-collor: rgb(236, 236, 236);
 }
 
 main {
@@ -130,8 +131,7 @@ main {
 
 /* about-section */
 .about-section {
-    height: 70vh;
-    /* margin-bottom: 10vh; */
+    /* height: 70vh; */
 }
 
 .about-article {
@@ -144,6 +144,11 @@ main {
     text-align: center;
     letter-spacing: 0.3em;
 }
+.about-article span {
+    background-color: var(--light-grey-collor);
+    display: inline-block;
+    padding: 0.1em 0.5em;
+}
 
 .about-article p:nth-child(3) {
     margin: 1.3em 0;
@@ -155,8 +160,7 @@ main {
 
 /* menu-section */
 .menu-section {
-    /* margin: 10vh;  */
-    height: 80vh;
+    /* height: 80vh; */
 }
 
 .menu-article {
@@ -176,13 +180,13 @@ main {
 
 /* contact-section */
 .contact-section {
-    height: 70vh;
     width: 65%;
 }
 
 .contact-article-info {
     font-size: 0.8em;
     line-height: 1.7em;
+    margin-bottom: 1%;
 }
 
 .address {
@@ -195,21 +199,18 @@ main {
 .form {
     display: flex;
     flex-direction: column;
+    margin-bottom: 10vh;
 }
 
 input,
 select {
-    padding: 1.5em 0.7em;
+    padding: 1.2em 0.7em;
     box-sizing: border-box;
     color: var(--grey-color);
     font-size: 0.9em;
     border: none;
     border-bottom: 1px solid var(--grey-color);
-    ;
-}
-
-input {
-    margin: 1em 0;
+    margin-bottom: 1%;
 }
 
 .date {
@@ -227,7 +228,8 @@ select {
     font-family: 'Merriweather';
     padding: 0.8em 1em;
     border: none;
-    margin-top: 1em;
+    margin: 2em 0;
+    background-color: var(--light-grey-collor);
 }
 .button:hover {
     background-color: var(--grey-color);
@@ -235,7 +237,7 @@ select {
 /* Footer */
 .footer {
     height: 12vh;
-    background-color: rgb(228, 228, 228);
+    background-color: var(--light-grey-collor);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -247,4 +249,14 @@ select {
 
 .footer-text a {
     color: black;
+}
+
+
+@media screen and (max-width: 992px) {
+    main {
+        width: 100%;
+    }
+    .row-section, .contact-section {
+        width: 100%;
+    }
 }
